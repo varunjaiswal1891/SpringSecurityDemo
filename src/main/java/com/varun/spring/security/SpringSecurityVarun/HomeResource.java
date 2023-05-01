@@ -9,6 +9,6 @@ public class HomeResource {
     @GetMapping("/")
     public String home()
     {
-        return ("<h1>Welcome varun jaiswal  page</h1>");
+        return ("<h1>Welcome varun jaiswal  page added</h1>");
     }
 }
