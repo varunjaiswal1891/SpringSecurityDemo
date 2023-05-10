@@ -31,7 +31,10 @@ public class SecurityConfiguration {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception
      {
         auth.jdbcAuthentication()
-            .dataSource(dataSource)
+            .dataSource(dataSource);
+
+            
+            /* 
             .withDefaultSchema()
             .withUser(
                 User.withUsername("user")
@@ -43,6 +46,7 @@ public class SecurityConfiguration {
                     .password("pass")
                     .roles("ADMIN")
             );
+            */
      }
 
      @Bean
